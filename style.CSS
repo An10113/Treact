@@ -20,6 +20,14 @@ header{
 .text--color{
     color: #6415FF;
 }
+.container{
+    padding: 80px 0;
+}
+.row{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 /* 
 
 nav 
@@ -95,11 +103,6 @@ header
 .container{
     margin: 0 auto;
     padding: 96px 0;
-}
-.row{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 .head{
     display: flex;
@@ -189,4 +192,20 @@ header
 }
 .head__customer{
     margin-top: 5vw;
+}
+/* 
+
+features 
+
+*/
+#features{
+    height: 100vh;
+}
+.features__description{
+    margin: 0 auto;
+    text-align: center;
+}
+.features__service{
+    width: calc(100%/3);
+    display: flex;
 }
