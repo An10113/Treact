@@ -17,6 +17,17 @@ a{
 header{
     padding: 24px;
 }
+
+/*
+section
+*/
+.section__title{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    color: #243e63;
+}
+
 .text--color{
     color: #6415FF;
 }
@@ -28,6 +39,8 @@ header{
     max-width: 1200px;
     margin: 0 auto;
 }
+
+
 /* 
 
 nav 
@@ -205,7 +218,27 @@ features
     margin: 0 auto;
     text-align: center;
 }
+.features__services{
+   display: flex;
+   flex-wrap: wrap;
+}
 .features__service{
     width: calc(100%/3);
     display: flex;
+    padding: 32px 8px;
+}
+.features__service--wrap{
+    padding: 15px;
+    border: solid 1px;
+    border-color: rgb(226, 232, 240);
+    border-radius: 50%;
+
+}
+.features__service--img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.features__text--container{
+    margin-left: 16px;
 }
