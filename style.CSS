@@ -25,6 +25,7 @@ section
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.6px;
+    color: #6415FF;
 
 }
 .section__title{
@@ -40,6 +41,7 @@ section
     max-width: 600px;
     margin: 0 auto;
     margin-top: 16px;
+    line-height: 1.625;
 
 }
 .text--color{
@@ -53,7 +55,25 @@ section
     max-width: 1200px;
     margin: 0 auto;
 }
+.section__button{
+    margin-top: 24px;
+    padding: 12px 32px;
+    border-radius: 9999px;
+    background-color: #6415FF;
+    transition: all 300ms ease;
+    border: none;
+    display: block;
 
+}
+.section__button--link{
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+
+}
+.section__button:hover{
+    filter: brightness(0.9);
+}
 
 /* 
 
@@ -229,7 +249,6 @@ features
     height: 100vh;
 }
 
-
 .features__head{
     margin-bottom: 20px;
 }
@@ -238,26 +257,69 @@ features
     text-align: center;
 }
 .features__services{
-   display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
    flex-wrap: wrap;
+   margin-top: 32px;
 }
 .features__service{
     width: calc(100%/3);
     display: flex;
-    padding: 32px 8px;
+    padding: 32px 10px;
 }
-.features__service--wrap{
-    padding: 15px;
-    border: solid 1px;
-    border-color: rgb(226, 232, 240);
-    border-radius: 50%;
 
-}
 .features__service--img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 50%;
+    border: solid 1px rgb(226, 232, 240);
+    display: block;
+    align-content: center;
+    padding: 20px;
 }
 .features__text--container{
     margin-left: 16px;
+    margin-top: 4px;
+}
+.features__text--title{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #243e63;
+}
+.features__text--para{
+    font-size: 16px;
+    margin-top: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+    color: #7c8ba1;
+}
+
+/*
+
+quality work
+
+*/
+
+#work{
+    height: 100vh;
+}
+.work__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.work__title{
+    margin-top: 16px;
+    text-align: left;
+}
+.work__description{
+    max-width: 47%;
+}
+.work__img--wrap{
+    MAX-width: 50%;
+}
+.work__img{
+    width: 100%;
 }
