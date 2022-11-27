@@ -21,13 +21,27 @@ header{
 /*
 section
 */
+.section__name{
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+
+}
 .section__title{
     text-align: center;
     font-size: 48px;
     font-weight: 900;
     color: #243e63;
+    letter-spacing: 1px;
 }
+.section__para{
+    color: #7c8ba1;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 16px;
 
+}
 .text--color{
     color: #6415FF;
 }
@@ -213,6 +227,11 @@ features
 */
 #features{
     height: 100vh;
+}
+
+
+.features__head{
+    margin-bottom: 20px;
 }
 .features__description{
     margin: 0 auto;
