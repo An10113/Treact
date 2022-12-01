@@ -10,6 +10,8 @@
       src="https://kit.fontawesome.com/52945062b0.js"
       crossorigin="anonymous"
     ></script>
+    <script 
+    src="./index.js"></script>
   </head>
   <body>
     <header>
@@ -33,7 +35,7 @@
               <a href="" class="nav__link">Blog</a>
             </li>
             <li class="nav__link--wrap">
-              <a href="" class="nav__link">Pricing</a>
+              <a href="#pricing" class="nav__link">Pricing</a>
             </li>
             <li class="nav__link--wrap">
               <a href="" class="nav__link">Contact Us</a>
@@ -45,6 +47,34 @@
               <a href="" class="nav__link--primary">Sign up</a>
             </li>
           </ul>
+        </div>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+              <ul class="menu__links">
+                <li class="nav__link--wrap menu__list">
+                  <a href="" class="menu__link">Home</a>
+                </li>
+                <li class="nav__link--wrap menu__list">
+                  <a href="" class=" menu__link">Blog</a>
+                </li>
+                <li class="nav__link--wrap menu__list">
+                  <a href="#pricing" class=" menu__link">Pricing</a>
+                </li>
+                <li class="nav__link--wrap menu__list">
+                  <a href="" class="menu__link">Contact Us</a>
+                </li>
+                <li class="nav__link--wrap menu__list">
+                  <a href="" class="menu__link">Login</a>
+                </li>
+                <li class="nav__link--wrap menu__list">
+                  <a href="" class="nav__link--primary ">Sign up</a>
+                </li>
+              </ul>
         </div>
       </nav>
       <div class="header">
