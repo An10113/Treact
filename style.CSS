@@ -387,16 +387,17 @@ step
 */
 .steps__container {
     display: flex;
+    flex-direction: row;
 }
 
 .steps__img--wrap {
     max-width: 50%;
+    display: flex;
+    align-items: center;
 }
 
 .steps__img {
     width: 100%;
-    display: flex;
-    align-items: center;
 }
 
 .steps__path--number {
@@ -797,15 +798,15 @@ media queries
 */
 
 @media (max-width: 992px) {
-    
-    .container{
+
+    .container {
         padding: 50px 0;
     }
-    
-    
+
     .head__title {
         font-size: 32px;
     }
+
     .head__subtitle {
         margin: 10px 0;
         font-size: 1rem;
@@ -833,14 +834,15 @@ media queries
         display: flex;
         flex-direction: column;
     }
-    .head__customer--img{
+
+    .head__customer--img {
         align-content: center;
         padding-right: 0;
         max-width: 630px;
     }
 
     .head__img--wrap {
-       max-width: 630px;
+        max-width: 630px;
         margin: 0 auto;
     }
 
@@ -851,17 +853,86 @@ media queries
     }
 
     /*
-
+    
     featues
-
+    
     */
-    .features__service{
+    .features__service {
         width: 50%;
     }
-    .features__services{
-        padding: 0 5vw ;
+
+    .features__services {
+        padding: 0 5vw;
     }
-    #features{
+
+    #features {
         height: fit-content;
     }
+
+    /* 
+
+    plans
+
+    */
+    .pricing__plans{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing__plan{
+        width: 100%;
+        max-width: 24rem;
+        margin-bottom: 40px;
+    }
+
+    .pricing__plan2{
+        width: 100%;
+        max-width: 24rem;
+        margin-bottom: 40px;
+    }
+}
+
+
+@media (max-width:768px) {
+
+    /* 
+
+    quality-work
+    
+    */
+
+
+    #work {
+        height: fit-content;
+    }
+
+    .work__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work__description {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .work__title {
+        text-align: center;
+
+    }
+
+    .section__button {
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .work__img--wrap {
+        max-width: 630px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
 }
